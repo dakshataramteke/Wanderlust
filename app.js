@@ -40,7 +40,8 @@ const sessionOptions = {
 }
 
 app.get("/", (req,res)=>{
-    res.send("Welcome to Airbnb")
+    // res.send("Welcome to Airbnb")
+    res.render("listings/Home.ejs");
 })
 
 app.use(session(sessionOptions));
